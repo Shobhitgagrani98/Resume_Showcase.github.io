@@ -1,0 +1,108 @@
+div {
+  background-color: none;
+  border: 1px solid aquamarine;
+  padding: 30px;
+  font-weight: bold;
+}
+img{
+   display: none;
+}
+a img{
+	display:block;
+}
+
+span:hover + img{
+   display: block;
+}
+span:hover {
+	cursor: pointer;
+}
+
+#contact p{
+	background-color: white;
+
+}
+
+#about {
+	font-size: 18px;
+}
+#contact {
+  padding-top: 30px;
+  text-align: center;
+  margin: 30px;
+  background-color: gray;
+  min-width: 400px;
+  min-height: 200px;
+  border-radius: 5px;
+}
+
+div#contact:hover{
+  background-color: orange;
+}
+
+p::first-letter {
+  text-transform: uppercase;
+  color: red;
+  font-size: 30px;
+}
+
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  background-color:white;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.tab.active {
+  background-color: #CCC;
+}
+
+.tab:hover {
+  background-color: #AAA;
+}
+
+.tab-content {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+html { 
+  background: url(https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
